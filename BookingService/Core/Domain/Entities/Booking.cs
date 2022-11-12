@@ -5,6 +5,11 @@ namespace Domain.Entities
 {
     public class Booking
     {
+        public Booking()
+        {
+            this.Status = Status.Created;
+        }
+
         public int Id { get; set; } 
 
         public DateTime PlaceAt { get; set; }   
